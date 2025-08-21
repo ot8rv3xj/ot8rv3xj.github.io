@@ -251,13 +251,8 @@ lang: de
                 </div>
                 <div class="form-group half">
                   <label>Telefonnummer <span>*</span></label>
-                  <div class="phone-input">
-                    <select name="countryCode">
-                      <option>+43</option>
-                      <option selected>+49</option>
-                    </select>
-                    <input type="tel" name="phone" placeholder="Telefonnummer eingeben" required>
-                  </div>
+                  <input id="phone" type="tel" name="phone" required />
+                  <div id="phone-error" class="error" style="display:none;"></div>
                 </div>
               </div>
 
@@ -363,7 +358,7 @@ lang: de
                 <button type="submit">Absenden</button>
               </div>
             </div>
-<div id="form-loader" class="loader" aria-hidden="true"></div>
+            <div id="form-loader" class="loader" aria-hidden="true"></div>
             <!-- Result message -->
             <div id="form-result" style="display:none">
 

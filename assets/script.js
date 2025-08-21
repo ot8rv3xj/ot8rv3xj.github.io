@@ -206,3 +206,34 @@ document.getElementById(`retry`)
   document.getElementById('form-result').style.display = 'none'
   document.getElementById('form-success').style.display = 'none'
  document.getElementById('form-result-error').style.display = 'none' });
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.querySelector("#phone");
+  if (!input) return;
+
+  const errorMsg = document.querySelector("#phone-error");
+
+  const iti = window.intlTelInput(input, {
+    initialCountry: "at", // Austria default
+    preferredCountries: ["at", "de"],
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"
+  });
+
+  const form = input.closest("form");
+  form.addEventListener("submit", function (e) {
+    if (input.value.trim()) {
+      if (!iti.isValidNumber()) {
+        e.preventDefault();
+        input.classList.add("error-input");
+        errorMsg.style.display = "block";
+        errorMsg.textContent = 
+          document.documentElement.lang === "de"
+            ? "❌ Ungültige Telefonnummer. Bitte überprüfen."
+            : "❌ Invalid phone number. Please check.";
+      } else {
+        input.value = iti.getNumber(); // E.164 format
+        input.classList.remove("error-input");
+        errorMsg.style.display = "none";
+      }
+    }
+  });
+});

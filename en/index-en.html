@@ -7,12 +7,12 @@ lang: en
   <!-- Section 1: Hero -->
   <section id="hero" class="hero-section">
 
-      <div class="container hero-content text-center">
-        <h1>Ihr Dolmetscherdienst – Your bridge to successful communication.</h1>
-        <p>We enable seamless understanding – competent and discreet.</p>
-        <p>Whether companies, authorities, or private individuals – we create connections where language divides.</p>
-        <a href="#styled-form" class="btn-primary">Request</a>
-      </div>
+    <div class="container hero-content text-center">
+      <h1>Ihr Dolmetscherdienst – Your bridge to successful communication.</h1>
+      <p>We enable seamless understanding – competent and discreet.</p>
+      <p>Whether companies, authorities, or private individuals – we create connections where language divides.</p>
+      <a href="#styled-form" class="btn-primary">Request</a>
+    </div>
 
   </section>
 
@@ -244,14 +244,9 @@ lang: en
                   <input type="email" name="email" placeholder="Your email address" required>
                 </div>
                 <div class="form-group half">
-                  <label>Phone Number <span>*</span></label>
-                  <div class="phone-input">
-                    <select name="countryCode">
-                      <option>+43</option>
-                      <option selected>+49</option>
-                    </select>
-                    <input type="tel" name="phone" placeholder="Enter phone number" required>
-                  </div>
+                  <label>Phone number <span>*</span></label>
+                  <input id="phone" type="tel" name="phone" required />
+                  <div id="phone-error" class="error" style="display:none;"></div>
                 </div>
               </div>
 
