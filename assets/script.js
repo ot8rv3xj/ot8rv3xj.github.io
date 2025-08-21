@@ -240,11 +240,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 document.addEventListener("DOMContentLoaded", () => {
   const phoneInput = document.querySelector("#phone");
+
   if (phoneInput) {
+    const lang = document.documentElement.lang; // "en" or "de"
+
+    const localizedCountries = (lang === "de") ? {
+      at: "Österreich",
+      de: "Deutschland"
+    } : {
+      at: "Austria",
+      de: "Germany"
+    };
+
     window.intlTelInput(phoneInput, {
       initialCountry: "at",
       preferredCountries: ["at", "de"],
       separateDialCode: true,
+      localizedCountries: localizedCountries,
       utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js"
     });
   }
