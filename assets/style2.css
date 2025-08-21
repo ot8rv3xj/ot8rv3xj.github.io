@@ -630,6 +630,14 @@ section.hero-section {
   display: flex;
   gap: var(--spacing-sm);
 }
+/* Ensure the phone input fits nicely */
+.iti {
+  width: 100%;
+}
+
+.iti__selected-flag {
+  background-color: #fff; /* clean flag background */
+}
 .offer-form .phone-input select {
   flex: 0 0 30%;
   min-width: 60px;
