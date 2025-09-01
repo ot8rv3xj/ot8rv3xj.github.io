@@ -1,408 +1,69 @@
----
-layout: default
-title: "Ihr Dolmetscherdiensts"
-lang: de
----
-<main>
-  <!-- Section 1: Hero -->
-  <section id="hero" class="hero-section">
-    <div class="container hero-content text-center">
-      <h1>Ihr Dolmetscherdienst – Ihre Brücke zu erfolgreicher Kommunikation.</h1>
-      <p>Wir ermöglichen reibungslose Verständigung – kompetent und diskret.</p>
-      <p>Ob Unternehmen, Behörde oder Privatperson – wir schaffen Verbindungen, wo Sprache trennt.</p>
-      <a href="#styled-form" class="btn-primary">Anfrage</a>
-    </div>
-  </section>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anfrage Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f5f5f5;
+    }
 
+    .form-box {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-  <!-- Section 2: Features -->
-  <section id="leistungen" class="features-section">
-    <div class="container">
-      <h2 class="text-center">Leistungen</h2>
+    .form-group {
+      margin-bottom: 1rem;
+    }
 
-      <div class="features mt-lg">
-        <div class="feature-card">
-          <!-- Telefon Icon -->
-          <article class="feature-card">
-            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.74 3.88.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5.5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.35.26 2.67.74 3.88a1 1 0 01-.21 1.11l-2.2 2.2z" " />
-          </svg> <h3>Telefon-Dolmetschen</h3>
-          <p>
-            Sofortige, zuverlässige Unterstützung am Telefon – flexibel und weltweit
-            verfügbar. Unsere professionellen Dolmetscher*innen helfen Ihnen, Sprachbarrieren
-            spontan und sicher zu überwinden.
-          </p>
-        </div>
-        </article>
-        <div class=" feature-card">
-                <!-- Video Icon -->
-                <article class="feature-card">
-                  <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                    <path
-                      d="M17 10.5V7c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-3.5l4 4v-11l-4 4z" " />
-          </svg>
-          <h3>Video-Dolmetschen</h3>
-          <p>
-            Modernes Dolmetschen für Online-Meetings, Videokonferenzen und digitale
-            Veranstaltungen. Flexibel, sicher und ortsunabhängig – ideal für Ihre digitalen
-            Geschäftsprozesse.
-          </p>
-          </article>
-        </div>
-        <div class=" feature-card">
-                      <!-- On-site Icon -->
-                      <article class="feature-card">
-                        <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                          aria-hidden="true">
-                          <path
-                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" " />
-          </svg>
-          <h3>Vor-Ort-Dolmetschen</h3>
-          <p>
-            Persönliche Sprachmittlung direkt vor Ort – professionell, diskret und
-            passgenau für Ihre individuellen Anforderungen.
-          </p>
-          </article>
-        </div>
-      </div>
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
 
-  </section>
+    .radio-group {
+      display: flex;
+      gap: 1.5rem; /* controls spacing between radio options */
+    }
 
-  <!-- Section 3: Process -->
-  <section id=" sprachen" class="languages-section">
-                            <div class="container">
-                              <h2 class="text-center">Sprachen</h2>
-                              <p class="text-center">Wir bieten Ihnen exzellente Dolmetschleistungen in zahlreichen
-                                Sprachen:</p>
-                              <div class="languages-grid mt-lg">
-                                <div class="language-item">
-                                  <span class="flag" role="img" aria-label="Deutsch">🇩🇪</span>
-                                  <span class="language-name">Deutsch</span>
-                                </div>
-                                <div class="language-item">
-                                  <span class="flag" role="img" aria-label="Englisch">🇬🇧</span>
-                                  <span class="language-name">Englisch</span>
-                                </div>
-                                <div class="language-item">
-                                  <span class="flag" role="img" aria-label="Hindi">🇮🇳</span>
-                                  <span class="language-name">Hindi</span>
-                                </div>
-                                <div class="language-item">
-                                  <span class="flag" role="img" aria-label="Urdu">🇵🇰</span>
-                                  <span class="language-name">Urdu</span>
-                                </div>
-                                <div class="language-item">
-                                  <span class="flag" role="img" aria-label="Punjabi">🇮🇳</span>
-                                  <span class="language-name">Punjabi</span>
-                                </div>
-                                <div class="language-item">
-                                  <span class="flag" role="img" aria-label="Bengali">🇧🇩</span>
-                                  <span class="language-name">Bengali</span>
-                                </div>
-                                <div class="language-item">
-                                  <span class="flag" role="img" aria-label="Arabisch">🇸🇦</span>
-                                  <span class="language-name">Arabisch</span>
-                                </div>
-                              </div>
-                              <p class="text-center mt-lg">Sprechen Sie uns an, wenn Sie eine weitere Sprache benötigen!
-                              </p>
-                            </div>
-  </section>
+    .radio-group label {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem; /* space between circle and text */
+      cursor: pointer;
+    }
 
+    input[type="radio"] {
+      accent-color: #133665; /* theme color */
+    }
 
-
-
-  <!-- Section 5: Testimonials -->
-  <section id="team" class="team-section">
-    <div class="container">
-      <h2 class="text-center">Unser Team</h2>
-      <p class="text-center">
-        Unser Team besteht aus erfahrenen, zertifizierten und mehrsprachigen Dolmetscher*innen.
-
-        Wir unterstützen Sie professionell, flexibel und zuverlässig – sowohl vor Ort, telefonisch als auch per Video.
-
-        Dank unserer breiten Sprachkompetenz, interkulturellen Erfahrung und Branchenkenntnis finden wir für jede
-        Situation die passende Lösung. Vertrauen Sie auf unsere Expertise, damit Ihre Kommunikation gelingt.
-      </p>
-    </div>
-  </section>
-
-  <!-- Section 4: Portfolio -->
-  <section id="branchen" class="portfolio-section">
-    <div class="container">
-      <h2 class="text-center">Branchen</h2>
-      <p class="text-center">Wir dolmetschen für Auftraggeber aus verschiedensten Bereichen, unter anderem:</p>
-      <div class="industries-grid mt-lg">
-        <div class="industry-item">Behörden / Öffentlicher Dienst</div>
-        <div class="industry-item">Medizin / Gesundheit</div>
-        <div class="industry-item">Justiz / Recht</div>
-        <div class="industry-item">Wirtschaft / Handel</div>
-        <div class="industry-item">Bildung / Schule / Universität</div>
-        <div class="industry-item">Soziales / Sozialarbeit</div>
-        <div class="industry-item">Technik / IT</div>
-        <div class="industry-item">Tourismus / Hotellerie</div>
-        <div class="industry-item">Marketing / Werbung</div>
-        <div class="industry-item">Kultur / Kunst</div>
-        <div class="industry-item">Messen / Veranstaltungen</div>
-        <div class="industry-item">Bauwesen / Architektur</div>
-        <div class="industry-item">Industrie / Produktion</div>
-        <div class="industry-item">Finanzen / Versicherungen</div>
-        <div class="industry-item">Personal / HR</div>
-        <div class="industry-item">Wissenschaft / Forschung</div>
-        <div class="industry-item">Privater Bereich</div>
-        <div class="industry-item">Sonstiges / Anderes</div>
-      </div>
-      <p class="text-center mt-lg">Ob Einzelperson, Unternehmen oder Institution – wir sind Ihr kompetenter Partner für
-        professionelle Sprachmittlung in jeder Situation.</p>
-    </div>
-  </section>
-  <!-- Section 6: Contact (Two-Step Form) -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-grid mt-lg">
-        <!-- Left Offer Card -->
-        <div class="offer-card">
-          <h2>Sie möchten uns erreichen?</h2>
-          <p>Gerne sind wir für Sie da – persönlich, unkompliziert und diskret.</p>
-          <div class="contact-box">
-            <div class="contact-item">
-              <span class="contact-label">E-Mail:</span>
-              <a href="mailto:contact@ihrdolmetscherdienst.at" class="contact-value">contact@ihrdolmetscherdienst.at</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-label">Telefon:</span>
-              <a href="tel:+4364646161616" class="contact-value">+43 6464 6161616</a>
-            </div>
-          </div>
-          <p>Oder nutzen Sie einfach unser Kontaktformular. Wir beantworten Ihre Anfrage zeitnah und zuverlässig.</p>
-          <p>Vertrauen Sie auf unsere Erfahrung – wir beraten Sie persönlich und sorgen dafür, dass Ihre Botschaft
-            sicher ankommt.</p>
-
-
-        </div>
-        <!-- Right Two-Step Styled Form -->
-
-        <div class="offer-form">
-          <form id="styled-form">
-            <!-- Honeypot: hidden field -->
-
-
-            <!-- Step 1 -->
-            <div class="form-step" id="step-1">
-              <h2>Anfrage</h2>
-              <p>Nutzen Sie unser Formular, um uns Ihr Anliegen zu schildern.</p>
-              <input type="text" name="firstname" style="display:none;">
-              <!-- 1st row: Art der Anfrage -->
-              <div class="form-row form-group">
-                <label>Art der Anfrage <span>*</span></label>
-                <div class="radio-group">
-                  <label><input type="radio" name="type" value="unternehmen" checked> Unternehmen</label>
-                  <label><input type="radio" name="type" value="privat"> Privat</label>
-                </div>
-              </div>
-
-              <!-- 2nd row: Name -->
-              <div class="form-row">
-                <div class="form-group full">
-                  <label>Vollständiger Name <span>*</span></label>
-                  <input type="text" name="fullname" placeholder="Vollständigen Namen eingeben" required>
-                </div>
-              </div>
-
-              <!-- 3rd row: Company Name & Branch -->
-              <div class="form-row company-fields">
-                <div class="form-group half">
-                  <label>Name des Unternehmens <span>*</span></label>
-                  <input type="text" name="companyName" placeholder="Name des Unternehmens eingeben" required>
-                </div>
-
-                <div class="form-group half">
-                  <label for="industry">Unternehmensbranche <span>*</span></label>
-                  <select id="industry" name="industry" required>
-                    <option value="" disabled selected>Bitte wählen...</option>
-                    <option>Behörden / Öffentlicher Dienst</option>
-                    <option>Medizin / Gesundheit</option>
-                    <option>Justiz / Recht</option>
-                    <option>Wirtschaft / Handel</option>
-                    <option>Bildung / Schule / Universität</option>
-                    <option>Soziales / Sozialarbeit</option>
-                    <option>Technik / IT</option>
-                    <option>Tourismus / Hotellerie</option>
-                    <option>Marketing / Werbung</option>
-                    <option>Kultur / Kunst</option>
-                    <option>Messen / Veranstaltungen</option>
-                    <option>Bauwesen / Architektur</option>
-                    <option>Industrie / Produktion</option>
-                    <option>Finanzen / Versicherungen</option>
-                    <option>Personal / HR</option>
-                    <option>Wissenschaft / Forschung</option>
-                    <option>Privater Bereich</option>
-                    <option>Sonstiges / Anderes</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- 4th row: Email + Phone -->
-              <div class="form-row">
-                <div class="form-group half">
-                  <label>E-Mail <span>*</span></label>
-                  <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
-                </div>
-                <div class="form-group half">
-                  <label for="phone">Telefonnummer <span>*</span></label>
-                  <input id="phone" type="tel" name="phone" required>
-                </div>
-              </div>
-
-              <!-- 5th row: Services -->
-              <div class="form-row">
-                <h3>Welche Dienstleistung? <span>*</span></h3>
-                <div class="service-options">
-                  <label><input type="radio" name="service" value="Telefon-Dolmetschen" required>
-                    Telefon-Dolmetschen</label>
-                  <label><input type="radio" name="service" value="Vor-Ort-Dolmetschen"> Vor-Ort-Dolmetschen</label>
-                  <label><input type="radio" name="service" value="Video-Dolmetschen"> Video-Dolmetschen</label>
-                </div>
-              </div>
-
-              <!-- Next button -->
-              <div class="form-row">
-                <button type="button" id="next-btn">Weiter</button>
-              </div>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="form-step" id="step-2" style="display:none;">
-              <h2>Dolmetschen Details</h2>
-
-              <!-- 1st row -->
-              <div class="form-group half">
-                <label for="source-language">Ausgangssprache <span>*</span></label>
-                <select id="source-language" name="sourceLanguage[]" multiple required>
-                  <option>Deutsch</option>
-                  <option>Englisch</option>
-                  <option>Hindi</option>
-                  <option>Urdu</option>
-                  <option>Punjabi</option>
-                  <option>Bengali</option>
-                  <option>Arabisch</option>
-                </select>
-              </div>
-
-              <div class="form-group half">
-                <label for="target-language">Zweitsprache <span>*</span></label>
-                <select id="target-language" name="targetLanguage[]" multiple required>
-                  <option>Deutsch</option>
-                  <option>Englisch</option>
-                  <option>Hindi</option>
-                  <option>Urdu</option>
-                  <option>Punjabi</option>
-                  <option>Bengali</option>
-                  <option>Arabisch</option>
-                </select>
-              </div>
-
-              <!-- 2nd row -->
-              <div class="form-row">
-                <div class="form-group half">
-                  <label>Startdatum <span>*</span></label>
-                  <input type="date" name="startDate" required>
-                </div>
-                <div class="form-group half">
-                  <label>Enddatum <span>*</span></label>
-                  <input type="date" name="endDate" required>
-                </div>
-              </div>
-
-              <!-- 3rd row -->
-              <div class="form-row">
-                <div class="form-group third">
-                  <label>Uhrzeit von <span>*</span></label>
-                  <input type="time" name="timeFrom" required>
-                </div>
-                <div class="form-group third">
-                  <label>Uhrzeit bis <span>*</span></label>
-                  <input type="time" name="timeTo" required>
-                </div>
-                <div class="form-group third">
-                  <label>Anzahl Dolmetscher <span>*</span></label>
-                  <input type="number" name="interpreterCount" min="1" placeholder="Anzahl Dolmetscher" required>
-                </div>
-              </div>
-
-              <!-- 4th row -->
-              <div class="form-row">
-                <div class="form-group half">
-                  <label>Ort <span>*</span></label>
-                  <input type="text" name="location" placeholder="Ort eingeben" required>
-                </div>
-                <div class="form-group half">
-                  <label>Anzahl Teilnehmer <span>*</span></label>
-                  <input type="number" name="participants" min="1" placeholder="Anzahl Teilnehmer" required>
-                </div>
-              </div>
-
-              <!-- GDPR consent -->
-              <div class="form-row">
-                <label>
-                  <input type="checkbox" name="consent" value="yes" required>
-                  Ich stimme der Verarbeitung meiner Daten gemäß der <a href="de/datenschutz.html"
-                    target="_blank">Datenschutzerklärung</a> zu.
-                </label>
-              </div>
-
-              <!-- Submit -->
-              <div class="form-row">
-                <button type="submit">Absenden</button>
-              </div>
-            </div>
-            <div id="form-loader" class="loader" aria-hidden="true"></div>
-            <!-- Result message -->
-            <div id="form-result" style="display:none">
-
-              <!-- ===== Success: English ===== -->
-
-
-              <!-- ===== Success: German ===== -->
-              <div id="form-success" class="result success " style="display:none; text-align:center; padding:2rem;">
-                <!-- Check icon -->
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M20 6L9 17l-5-5" />
-                </svg>
-                <p style="font-size:1rem; margin:1rem 0; color:var(--color-text);">
-                  Vielen Dank! Ihre Anfrage wurde erfolgreich versendet.
-                </p>
-                <button type="button" class="btn-primary" id="new-request">
-                  Neue Anfrage
-                </button>
-              </div>
-
-
-
-              <!-- ===== Error: German ===== -->
-              <div id="form-result-error" class="result error" style="display:none; text-align:center; padding:2rem;">
-                <!-- Error icon -->
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-error)" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="12" y1="8" x2="12" y2="12" />
-                  <line x1="12" y1="16" x2="12.01" y2="16" />
-                </svg>
-                <p style="font-size:1rem; margin:1rem 0; color:var(--color-text);">
-                  Hoppla! Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.
-                </p>
-                <button type="button" class="btn-primary" id="retry">
-                  Erneut versuchen
-                </button>
-              </div>
-
-            </div>
-          </form>
-        </div>
+    @media (max-width: 500px) {
+      .radio-group {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Anfrage</h2>
+    <div class="form-group">
+      <label>Art der Anfrage *</label>
+      <div class="radio-group">
+        <label><input type="radio" name="type" value="unternehmen" checked> Unternehmen</label>
+        <label><input type="radio" name="type" value="privat"> Privat</label>
       </div>
     </div>
-    </div>
-  </section>
-</main>
+  </div>
+</body>
+</html>
